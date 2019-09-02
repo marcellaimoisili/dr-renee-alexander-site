@@ -28,32 +28,34 @@ $navTitle = "ABOUT";
     <div class="content-wrap" id="about_page">
         <h1> About </h1>
 
-        <div class="pres-timeline" id="this-timeline">
-            <?php
-            $records = exec_sql_query($db, "SELECT * FROM about_images")->fetchAll(PDO::FETCH_ASSOC);
+        <div class="body-wrap">
+            <div class="pres-timeline" id="this-timeline">
+                <?php
+                $records = exec_sql_query($db, "SELECT * FROM about_images")->fetchAll(PDO::FETCH_ASSOC);
 
-            /*foreach ($records as $record) {
-                echo ' <div class="slideshowImage fade">';
-                echo '<div class="timeline"><img class="slide_image"  src="uploads/about_images/' . $record["id"] . "." . $record["img_ext"] . '" alt="' . htmlspecialchars($record['caption']) . '"/>    <p class="citation"> Source: Dr. Renee Alexander </p></div>';
-                echo '<div class="bio"><p class="about-text">' . htmlspecialchars($record['caption']) . '</p></div>';
-                echo '</div>';
-            } ?>*/
-            foreach ($records as $record) {
-                echo '<div class="cards-container">';
-                echo '<section class="card-single active" period="period1">';
-                echo '<h4 class="year">1816</h4>';
-                echo '<h2 class="title">Lorem ipsum dolor sit amet.</h2>';
-                echo '<div class="content">';
-                echo '<img src="uploads/about_images/' . $record["id"] . "." . $record["img_ext"] . '" alt="'  . htmlspecialchars($record['caption']) . '" />';
-                echo '<p>Lol.</p>';
-                echo '</div>';
-                echo '</section>';
-                echo '</div>';
-            } ?>
+                /*foreach ($records as $record) {
+                    echo ' <div class="slideshowImage fade">';
+                    echo '<div class="timeline"><img class="slide_image"  src="uploads/about_images/' . $record["id"] . "." . $record["img_ext"] . '" alt="' . htmlspecialchars($record['caption']) . '"/>    <p class="citation"> Source: Dr. Renee Alexander </p></div>';
+                    echo '<div class="bio"><p class="about-text">' . htmlspecialchars($record['caption']) . '</p></div>';
+                    echo '</div>';
+                } ?>*/
+                foreach ($records as $record) {
+                    echo '<div class="cards-container">';
+                    echo '<section class="card-single active" period="period1">';
+                    echo '<h4 class="year">1816</h4>';
+                    echo '<h2 class="title">Lorem ipsum dolor sit amet.</h2>';
+                    echo '<div class="content">';
+                    echo '<img src="uploads/about_images/' . $record["id"] . "." . $record["img_ext"] . '" alt="'  . htmlspecialchars($record['caption']) . '" />';
+                    echo '<p>Lol.</p>';
+                    echo '</div>';
+                    echo '</section>';
+                    echo '</div>';
+                } ?>
 
-            <div class="button">
-                <button id="slideshowNext" class="next" onclick="plusSlides(-1)">&#10094;</button>
-                <button id="slideshowPrevious" class="previous" onclick="plusSlides(1)">&#10095;</button>
+                <div class="button">
+                    <button id="slideshowNext" class="next" onclick="plusSlides(-1)">&#10094;</button>
+                    <button id="slideshowPrevious" class="previous" onclick="plusSlides(1)">&#10095;</button>
+                </div>
             </div>
         </div> 
 
