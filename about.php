@@ -49,8 +49,8 @@ $navTitle = "ABOUT";
                     foreach ($records as $record) {
                         echo '<div class="cards-container">';
                         echo '<section class="card-single active" period="period1">';
-                        echo '<h4 class="year">1816</h4>';
-                        echo '<h2 class="title">Lorem ipsum dolor sit amet.</h2>';
+                        echo '<h4 class="year">' . $record['year'] . '</h4>';
+                        echo '<h2 class="title">' . htmlspecialchars($record['title']) . '</h2>';
                         echo '<div class="content">';
                         echo '<img src="uploads/about_images/' . $record["id"] . "." . $record["img_ext"] . '" alt="'  . htmlspecialchars($record['caption']) . '" />';
                         echo '<p class="about-text">' . htmlspecialchars($record['caption']) . '</p>';
@@ -58,6 +58,8 @@ $navTitle = "ABOUT";
                         echo '</section>';
                         echo '</div>';
                     } ?>
+
+                    
 
                 <div class="button">
                     <button id="slideshowNext" class="next" onclick="plusSlides(-1)">&#10094;</button>
