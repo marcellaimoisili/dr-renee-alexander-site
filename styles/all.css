@@ -98,6 +98,10 @@ h1 {
     margin-right: 0%;
 }
 
+.description {
+    font-size: 1.5vh;
+}
+
 h2 {
     margin-left: 3%;
     text-decoration: underline;
@@ -937,28 +941,31 @@ textarea {
     width: 95%;
     min-height: 90%;
     margin: 0 auto;
-  }
-  
-  .pres-timeline {
+}
+
+.pres-timeline {
     font-family: roboto, helvetica, sans-serif;
     color: #4A4A4A;
     width: 100%;
     margin: 5% 0;
-  }
-  .pres-timeline > div > div {
+}
+
+.pres-timeline>div>div {
     padding: 1em 0;
     box-sizing: border-box;
-  }
-  .pres-timeline .periods-container, .pres-timeline .cards-container {
+}
+
+.pres-timeline .periods-container,
+.pres-timeline .cards-container {
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
     min-height: 90vh;
     transition: height 0.5s ease-in-out;
     background-color: #FFF;
-  }
-  
-  .periods-container:before {
+}
+
+.periods-container:before {
     background-image: linear-gradient(left, #FFF, rgba(248, 248, 248, 0));
     left: 0;
     content: "";
@@ -967,8 +974,9 @@ textarea {
     top: 0;
     height: 100%;
     width: 100px;
-  }
-  .periods-container:after {
+}
+
+.periods-container:after {
     background-image: linear-gradient(right, #FFF, rgba(248, 248, 248, 0));
     right: 0;
     content: "";
@@ -977,8 +985,10 @@ textarea {
     top: 0;
     height: 100%;
     width: 100px;
-  }
-  .periods-container .btn-back, .periods-container .btn-next {
+}
+
+.periods-container .btn-back,
+.periods-container .btn-next {
     display: inline-block;
     width: 15%;
     height: 100%;
@@ -986,20 +996,27 @@ textarea {
     cursor: pointer;
     z-index: 10;
     transition: 0.3s ease-in-out;
-  }
-  .periods-container .btn-back:hover, .periods-container .btn-next:hover {
+}
+
+.periods-container .btn-back:hover,
+.periods-container .btn-next:hover {
     background-color: rgba(0, 0, 0, 0.05);
-  }
-  .periods-container .btn-back.hide, .periods-container .btn-next.hide {
+}
+
+.periods-container .btn-back.hide,
+.periods-container .btn-next.hide {
     display: none;
-  }
-  .periods-container .btn-back {
+}
+
+.periods-container .btn-back {
     left: 0;
-  }
-  .periods-container .btn-next {
+}
+
+.periods-container .btn-next {
     right: 0;
-  }
-  .periods-container section {
+}
+
+.periods-container section {
     width: 70%;
     height: 0;
     position: absolute;
@@ -1013,55 +1030,65 @@ textarea {
     bottom: 0;
     opacity: 0;
     background-color: #fff;
-  }
-  .periods-container section.active {
+}
+
+.periods-container section.active {
     height: auto;
     opacity: 1;
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     z-index: 5;
-  }
-  .periods-container section.active .title, .periods-container section.active p {
+}
+
+.periods-container section.active .title,
+.periods-container section.active p {
     display: block;
-  }
-  .periods-container section.prev {
+}
+
+.periods-container section.prev {
     height: auto;
     opacity: 0.4;
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
     z-index: 0;
-  }
-  .periods-container section.prev .year {
+}
+
+.periods-container section.prev .year {
     text-align: right;
-  }
-  .periods-container section.next {
+}
+
+.periods-container section.next {
     height: auto;
     opacity: 0.4;
     -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    transform: translateX(100%);
     z-index: 0;
-  }
-  .periods-container section .year {
+}
+
+.periods-container section .year {
     font-size: 20px;
     font-weight: 400;
-  }
-  .periods-container section .title {
+}
+
+.periods-container section .title {
     color: #4A4A4A;
     font-size: 28px;
     font-weight: 400;
     display: none;
-  }
-  .periods-container section p {
+}
+
+.periods-container section p {
     display: none;
-  }
-  
-  .timeline-container {
+}
+
+.timeline-container {
     position: relative;
     width: 100%;
     height: 50px;
     overflow: hidden;
-  }
-  .timeline-container:before {
+}
+
+.timeline-container:before {
     background-image: linear-gradient(left, #FFF, rgba(248, 248, 248, 0));
     left: 0;
     content: "";
@@ -1070,8 +1097,9 @@ textarea {
     top: 0;
     height: 100%;
     width: 100px;
-  }
-  .timeline-container:after {
+}
+
+.timeline-container:after {
     background-image: linear-gradient(right, #FFF, rgba(248, 248, 248, 0));
     right: 0;
     content: "";
@@ -1080,14 +1108,16 @@ textarea {
     top: 0;
     height: 100%;
     width: 100px;
-  }
-  .timeline-container .timeline {
+}
+
+.timeline-container .timeline {
     position: absolute;
     display: block;
     height: 50px;
     transition: left 0.3s ease-in-out;
-  }
-  .timeline-container .timeline ol {
+}
+
+.timeline-container .timeline ol {
     display: block;
     width: 100%;
     height: 2px;
@@ -1095,8 +1125,9 @@ textarea {
     list-style: none;
     padding-left: 210px;
     padding-right: 300px;
-  }
-  .timeline-container .timeline ol li {
+}
+
+.timeline-container .timeline ol li {
     display: inline-block;
     padding: 5px;
     margin-top: -11px;
@@ -1107,11 +1138,13 @@ textarea {
     position: relative;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  .timeline-container .timeline ol li.active {
+}
+
+.timeline-container .timeline ol li.active {
     box-shadow: none;
-  }
-  .timeline-container .timeline ol li.active:before {
+}
+
+.timeline-container .timeline ol li.active:before {
     content: "";
     display: block;
     height: 25px;
@@ -1119,8 +1152,9 @@ textarea {
     position: absolute;
     top: -25px;
     transition: opacity 0.3s ease-in-out;
-  }
-  .timeline-container .timeline ol li.active:after {
+}
+
+.timeline-container .timeline ol li.active:after {
     content: "";
     display: block;
     height: 25px;
@@ -1128,29 +1162,37 @@ textarea {
     position: absolute;
     bottom: -25px;
     transition: opacity 0.3s ease-in-out;
-  }
-  .timeline-container .btn-back, .timeline-container .btn-next {
+}
+
+.timeline-container .btn-back,
+.timeline-container .btn-next {
     display: inline-block;
     position: absolute;
     cursor: pointer;
     margin-top: -2px;
     z-index: 11;
     transition: all 0.3s ease;
-  }
-  .timeline-container .btn-back.hide, .timeline-container .btn-next.hide {
+}
+
+.timeline-container .btn-back.hide,
+.timeline-container .btn-next.hide {
     display: none;
-  }
-  .timeline-container .btn-back:hover, .timeline-container .btn-next:hover {
+}
+
+.timeline-container .btn-back:hover,
+.timeline-container .btn-next:hover {
     border-color: #7f9298;
-  }
-  .timeline-container .btn-back {
+}
+
+.timeline-container .btn-back {
     left: 1em;
-  }
-  .timeline-container .btn-next {
+}
+
+.timeline-container .btn-next {
     right: 1em;
-  }
-  
-  .cards-container:before {
+}
+
+.cards-container:before {
     background-image: linear-gradient(left, #FFF, rgba(248, 248, 248, 0));
     left: 0;
     content: "";
@@ -1159,8 +1201,9 @@ textarea {
     top: 0;
     height: 100%;
     width: 50%;
-  }
-  .cards-container:after {
+}
+
+.cards-container:after {
     background-image: linear-gradient(right, #FFF, rgba(248, 248, 248, 0));
     right: 0;
     content: "";
@@ -1169,8 +1212,9 @@ textarea {
     top: 0;
     height: 100%;
     width: 70%;
-  }
-  .cards-container section {
+}
+
+.cards-container section {
     width: 70%;
     position: absolute;
     margin-left: 15%;
@@ -1186,40 +1230,46 @@ textarea {
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
-  }
-  .cards-container section.active {
+}
+
+.cards-container section.active {
     height: auto;
     opacity: 1;
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     z-index: 5;
-  }
-  .cards-container section.prev {
+}
+
+.cards-container section.prev {
     height: auto;
     opacity: 0.4;
     -webkit-transform: translateX(-105%);
-            transform: translateX(-105%);
+    transform: translateX(-105%);
     z-index: 0;
-  }
-  .cards-container section.next {
+}
+
+.cards-container section.next {
     height: auto;
     opacity: 0.4;
     -webkit-transform: translateX(105%);
-            transform: translateX(105%);
+    transform: translateX(105%);
     z-index: 0;
-  }
-  .cards-container section .year {
+}
+
+.cards-container section .year {
     text-align: center;
     font-size: 2.5vh;
     margin: 0;
-  }
-  .cards-container section .title {
+}
+
+.cards-container section .title {
     font-weight: 300;
-  }
-  .cards-container section img {
+}
+
+.cards-container section img {
     width: 30%;
-  }
-  
+}
+
 .gallerybanner {
     position: relative;
 }
