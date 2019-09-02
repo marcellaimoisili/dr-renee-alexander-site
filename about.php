@@ -45,7 +45,7 @@ $navTitle = "ABOUT";
                 echo '<h2 class="title">Lorem ipsum dolor sit amet.</h2>';
                 echo '<div class="content">';
                 echo '<img src="uploads/about_images/' . $record["id"] . "." . $record["img_ext"] . '" alt="'  . htmlspecialchars($record['caption']) . '" />';
-                echo '<p>Lol.</p>';
+                echo '<p class="about-text">' . htmlspecialchars($record['caption']) . '</p>';
                 echo '</div>';
                 echo '</section>';
                 echo '</div>';
